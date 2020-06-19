@@ -1,0 +1,346 @@
+/*Start Of styling*/
+
+/*Styling the body and html*/
+
+
+/** {
+  box-sizing: border-box;
+}*/
+
+body,html{
+	margin: 0 ;
+	height: 100%;
+	background-color: #1a1818;
+	color: white;
+}
+
+h1,h2,h3,h4,h5{
+	color: #ffae00;
+	font-family: 'Lora' , sans-serif;
+}
+/* End of body html styling*/
+
+/*The Navigation Section*/
+
+.nav-bar{
+	text-align: center;
+/*	background-color: #004700;
+	height: 50px;*/
+}
+
+/*End of The Navigation Section*/
+
+/*Hero Section*/
+
+.hero-section {
+  background-color: green;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+
+}
+
+
+/* End of Hero Section*/
+
+/*Start of History Section*/
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-gap: 0px;
+	background-color: inherit;
+	color:white;
+	padding: 0px;
+	margin-top:10px;
+
+}
+
+.grid-container > div {
+	text-align: center;
+	font-size:25px;
+	margin: 0px!important;
+	background-color: green;
+}
+
+.grid-container div > a{
+	text-decoration: none;
+	color: white;
+}
+
+.grid-container div > a:hover{
+	color: #ffae00;
+	padding-left: 10px;
+	transition: all 0.3s;
+}
+
+/*.history ul{
+	list-style-type: none;
+	margin:0px;
+	padding-left:20px; 
+}
+
+.history li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 10px;
+}
+.history li:before {
+  content: "\25BA \0020";
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}*/
+/*End of History Section*/
+ 
+/*Start of Blog Section*/
+
+
+/** {
+  box-sizing: border-box;
+}
+*/
+
+
+/* Start of Left Column*/
+
+.leftcolumn{
+	float:left;
+	width:75%;
+/*	border:1px solid red;
+*/}
+
+.fakeimg {
+  background-color: #8ca1c5;
+  width: 95%;
+  height:450px;
+  margin: 20px;
+}
+
+.cards h2{
+	margin-left: 20px;
+	display: block;
+}
+
+.text{
+	margin:20px;
+	display: block;
+	text-align: justify;
+}
+
+.leftcolumn1{
+	float: left;
+	width:50%;
+/*	border:1px solid red; 
+*/
+}
+.leftcolumn2{
+	float: left;
+	width:50%;
+/*	border:1px solid blue; 
+*/}
+.leftcolumn2 p{
+	margin: 20px;
+	display:block;
+	text-align: justify;
+}
+.fakeimg1{
+	background-color: #8ca1c5;
+	width: 95%;
+	margin: 20px;
+	height:460px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*End of Left Column*/
+
+/*Start of Right Column*/
+
+.rightcolumn{
+	float: left;
+	width:25%;
+	/*border: 1px solid pink;*/
+}
+
+/*Topics Overview Section*/
+
+.topics{
+	margin-left: 20px;
+	/*border: 1px solid green;*/
+}
+.topics-title{
+	margin: 20px;
+}
+
+.topics ul{
+	list-style: none;
+	margin:20px;
+	padding: 0px;
+}
+
+.topics ul li {
+	display: block;
+	padding: 10px 0px 10px 0px;
+}
+
+.topics a{
+	text-decoration: none;
+	color: white;
+}
+
+.topics a:hover{
+	color: #ffae00;
+	padding-left: 10px;
+	transition: all 0.3s;
+}
+
+/*End of topics overview section*/
+
+/*Start of new section*/
+
+.news{
+	margin-left: 20px;
+	/*border:1px solid yellow;*/
+}
+.news-title{
+	margin:20px;
+}
+
+.news a{
+	text-decoration: none;
+	color: white;
+}
+.news a:hover{
+	color: #ffae00;
+}
+.news p{
+	margin:20px;
+	display: block;
+}
+.fakeimg2{
+	background-color: #8ca1c5;
+	width: 80%;
+	margin: 20px;
+	height:300px;
+}
+
+/*End of news section*/
+
+/*Start of categories section*/
+
+.categories{
+	margin-left: 20px;
+	/*border:1px solid brown;*/
+}
+.categories-title{
+	margin: 20px;
+}
+.categories ul{
+	list-style: none;
+	margin:20px;
+	padding: 0px;
+}
+.categories ul li {
+	display: block;
+	padding: 10px 0px 10px 0px;
+}
+
+.categories a{
+	text-decoration: none;
+	color: white;
+}
+
+.categories a:hover{
+	color: #ffae00;
+	padding-left: 10px;
+	transition: all 0.3s;
+}
+
+/*End of categories section*/
+
+/*Start of pagination*/
+
+.pagination {
+	display: inline-block;
+	margin:20px;
+}
+.pagination a {
+	background-color: #ffae00;
+	color:black;
+	float: left;
+	border: 1px solid #ffae00;
+	text-decoration: none;
+	padding: 15px 15px;
+	margin: 0 5px;
+}
+.pagination .arrow  {
+	padding: 13.5px 13.5px;
+}
+
+/*End of pagination*/
+
+/*End of Right Column*/
+
+/*End of Blog Section*/
+
+/*Start of Media Queries*/
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .leftcolumn1, .leftcolumn2{
+  	width: 100%;
+  	padding: 0;
+  }
+
+  .leftcolumn2 p {
+	font-size: 1em!important;
+	padding: 0px!important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.fakeimg{
+		margin: 10px;
+	}
+
+	.fakeimg1{
+		margin: 10px;
+	}
+
+	.pagination {
+		margin: 20px;
+	}
+	.pagination a {
+		padding:7px 7px;
+	}
+	.pagination .arrow{
+		padding: 5px 5px;
+	}
+
+}
+
+@media screen and (max-width: 1250px) {
+	.leftcolumn2 p {
+		font-size: 0.8em;
+		padding-bottom:20px;
+	}
+	.fakeimg1{
+		margin: 10px;
+	}
+}
+/*End of Media Queries*/
